@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="style.css" />
+  </head>
+  <body>
+    <div class="card-information">
+      <div id="container">
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1536323760109-ca8c07450053"
+            alt="Landscape" />
+          <span class="tags">nature</span>
+          <span class="tags">Lake</span>
+          <div class="name">Lago di Braies</div>
+          <p>
+            Lago di Braies, also known as Pragser Wildsee, is a stunning alpine lake located in the Dolomite Mountains of northern Italy. Its
+            crystal-clear waters, surrounded by towering mountains and forests, make it a popular destination for hiking, boating, and photography.
+          </p>
+          <a
+            href="https://google.com"
+            target="_blank"
+            class="anchor">
+            Read More
+          </a>
+
+          <button
+            id="btn"
+            class="anchor">
+            TESTE
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    const btn = document.getElementById('btn');
+    const body = document.querySelector('body');
+    btn.addEventListener('click', (ev) => {
+      console.log(body);
+      body.style.background = 'red';
+    });
+  </script>
+</html>
